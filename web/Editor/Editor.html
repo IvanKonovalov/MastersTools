@@ -34,6 +34,9 @@
         .table {
             color: aliceblue;
         }
+        img {
+            margin-right: 7px;
+        }
 
     </style>
     <title>Editor</title>
@@ -48,45 +51,73 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" id="class-tab" data-toggle="tab" href="#class"
-                       role="tab" aria-controls="home" aria-selected="true">Класс</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                        <img src="../resources/icons.png" alt="icons" height="30px" width="30px">
+                        Класс
+                        </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="race-tab" data-toggle="tab" href="#race"
-                       role="tab" aria-controls="home" aria-selected="true">Раса</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                        <img src="../resources/icon-race.png" alt="icons" height="30px" width="30px">
+                        Расa
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="backstage-tab" data-toggle="tab" href="#backstage"
-                       role="tab" aria-controls="home" aria-selected="true">Предыстория</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                        <img src="../resources/icon-backstage.png" alt="icons" height="30px" width="30px">
+                        Предыстория
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="feats-tab" data-toggle="tab" href="#feats"
-                       role="tab" aria-controls="home" aria-selected="true">Черта</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                        <img src="../resources/icons.png" alt="icons" height="30px" width="30px">
+                        Черта
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="weapon-tab" data-toggle="tab" href="#weapon"
-                       role="tab" aria-controls="home" aria-selected="true">Оружие</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                       <img src="../resources/icon-weapon.png" alt="icons" height="30px" width="30px">
+                        Оружие
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="armor-tab" data-toggle="tab" href="#armor"
-                       role="tab" aria-controls="home" aria-selected="true">Броня</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                        <img src="../resources/icon-armor.png" alt="icons" height="30px" width="30px">
+                        Броня
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="items-tab" data-toggle="tab" href="#items"
-                       role="tab" aria-controls="home" aria-selected="true">Предметы</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                        <img src="../resources/icon-item.png" alt="icons" height="30px" width="30px">
+                        Предметы
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="skills-tab" data-toggle="tab" href="#skills"
-                       role="tab" aria-controls="home" aria-selected="true">Навыки</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                       <img src="../resources/icon-skill.png" alt="icons" height="30px" width="30px">
+                        Навыки
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " id="magic-tab" data-toggle="tab" href="#magic"
-                       role="tab" aria-controls="home" aria-selected="true">Магия</a>
+                       role="tab" aria-controls="home" aria-selected="true">
+                        <img src="../resources/icon-magic.png" alt="icons" height="30px" width="30px">
+                        Магия
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
     <div class="col-9 pl-0 themecolor">
         <div class="tab-content m-5" id="v-pills-tabContent">
+            <!-- Классы -->
             <div class="tab-pane fade show active" id="class" role="tabpanel" aria-labelledby="class-tab">
                 <table class="table">
                     <tr>
@@ -113,7 +144,9 @@
                     </div>
                 </form>
             </div>
+            <!-- Расы -->
             <div class="tab-pane fade" id="race" role="tabpanel" aria-labelledby="race-tab">
+                <!-- Список -->
                 <table class="table">
                     <tr>
                         <th>#</th>
@@ -126,6 +159,85 @@
                         <td>Удалить</td>
                     </tr>
                 </table>
+                <hr/>
+                <h5>Новая раса</h5>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="raceName">Название</label>
+                        <input class="form-control" id="raceName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="raceDescription">Описание класса</label>
+                        <textarea class="form-control" id="raceDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                    <div class="row">
+                        <!-- Размер -->
+                        <div class="form-group row pl-3">
+                            <label class="col-sm-5 col-form-label" for="size">Размер</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="size">
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Скорость -->
+                        <div class="form-group row pl-3">
+                            <label class="col-sm-5 col-form-label" for="speed">Скорость</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="speed">
+                                    <option>25</option>
+                                    <option>30</option>
+                                    <option>35</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Бонусы к характеристикам -->
+                    <div>
+                        <h6>Бонусы к характеристикам</h6>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="strength">Сила</label>
+                            <div class="col-sm-3">
+                                <input value="0" class="form-control" id="strength" placeholder="Введите количество"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="dexterity">Ловкость</label>
+                            <div class="col-sm-3">
+                                <input value="0" class="form-control" id="dexterity" placeholder="Введите количество"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="constitution">Телосложение</label>
+                            <div class="col-sm-3">
+                                <input value="0" class="form-control" id="constitution" placeholder="Введите количество"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="intelligence">Интеллект</label>
+                            <div class="col-sm-3">
+                                <input value="0" class="form-control" id="intelligence" placeholder="Введите количество"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="wisdom">Мудрость</label>
+                            <div class="col-sm-3">
+                                <input value="0" class="form-control" id="wisdom" placeholder="Введите количество"/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="charisma">Харизма</label>
+                            <div class="col-sm-3">
+                                <input value="0" class="form-control" id="charisma" placeholder="Введите количество"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="tab-pane fade" id="backstage" role="tabpanel" aria-labelledby="backstage-tab">
                 <table class="table">
