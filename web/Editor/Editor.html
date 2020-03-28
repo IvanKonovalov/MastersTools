@@ -13,6 +13,10 @@
             overflow-x: hidden;
             background-color: #3f5f5f;
         }
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: rgba(255, 255, 255, 0.0);
+        }
         .themecolor {
             background-color: darkslategray;
             color: aliceblue;
@@ -239,6 +243,7 @@
                     </div>
                 </form>
             </div>
+            <!-- Предыстория -->
             <div class="tab-pane fade" id="backstage" role="tabpanel" aria-labelledby="backstage-tab">
                 <table class="table">
                     <tr>
@@ -252,7 +257,20 @@
                         <td>Удалить</td>
                     </tr>
                 </table>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="backstageName">Название</label>
+                        <input class="form-control" id="backstageName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="backstageDescription">Описание класса</label>
+                        <textarea class="form-control" id="backstageDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                </form>
             </div>
+            <!-- Черты -->
             <div class="tab-pane fade" id="feats" role="tabpanel" aria-labelledby="feats-tab">
                 <table class="table">
                     <tr>
@@ -266,7 +284,20 @@
                         <td>Удалить</td>
                     </tr>
                 </table>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="featsName">Название</label>
+                        <input class="form-control" id="featsName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="featsDescription">Описание класса</label>
+                        <textarea class="form-control" id="featsDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                </form>
             </div>
+            <!-- Оружие -->
             <div class="tab-pane fade" id="weapon" role="tabpanel" aria-labelledby="weapon-tab">
                 <table class="table">
                     <tr>
@@ -286,7 +317,110 @@
                         <td>Удалить</td>
                     </tr>
                 </table>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="armorName">Название</label>
+                        <input class="form-control" id="weaponName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="armorDescription">Описание класса</label>
+                        <textarea class="form-control" id="weaponDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                    <!-- Категории оружия -->
+                    <div class="weapon-category container row">
+                        <h4 class="mr-4">Категория:</h4>
+                        <div class="ml-2 mt-1 col">
+                            <div class="form-group row">
+                                <input type="radio" class="custom-control-input" id="simpleWeapon" name="SMWeapon" checked>
+                                <label class="custom-control-label" for="simpleWeapon">Простое</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="radio" class="custom-control-input" id="militaryWeapon" name="SMWeapon">
+                                <label class="custom-control-label" for="militaryWeapon">Воиское</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="rangerWeapon" name="rangerWeapon">
+                                <label class="custom-control-label" for="rangerWeapon">Дальнобойное</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Свойства -->
+                    <h4 class="mr-4">Свойства:</h4>
+                    <div class="properties container ml-3 row">
+                        <div class="ml-2 mt-1 col">
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="ammoWeapon">
+                                <label class="custom-control-label" for="ammoWeapon">Боеприпас</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="TwoHandWeapon">
+                                <label class="custom-control-label" for="TwoHandWeapon">Двуручное</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="reachWeapon">
+                                <label class="custom-control-label" for="reachWeapon">Досягаемость</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="distanceWeapon">
+                                <label class="custom-control-label" for="distanceWeapon">Дистанция</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="lightWeapon">
+                                <label class="custom-control-label" for="lightWeapon">Легкое</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="throwableWeapon">
+                                <label class="custom-control-label" for="throwableWeapon">Метательное</label>
+                            </div>
+                        </div>
+                        <div class="ml-2 mt-2 col">
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="specialWeapon">
+                                <label class="custom-control-label" for="specialWeapon">Особое</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="reloadWeapon">
+                                <label class="custom-control-label" for="reloadWeapon">Перезарядка</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="heavyWeapon">
+                                <label class="custom-control-label" for="heavyWeapon">Тяжелое</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="universalWeapon">
+                                <label class="custom-control-label" for="universalWeapon">Универсальное</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="fencingWeapon">
+                                <label class="custom-control-label" for="fencingWeapon">Фехтовальное</label>
+                            </div>
+                            <div class="form-group row">
+                                <input type="checkbox" class="custom-control-input" id="hindranceWeapon">
+                                <label class="custom-control-label" for="hindranceWeapon">Помеха</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Стоимость оружия -->
+                    <div class="form-group row ml-2">
+                        <label class="col-5" for="costWeapon">Стоимость</label>
+                        <input type="text" class="form-control ml-3 col-3" id="costWeapon" placeholder="Стоимость">
+                    </div>
+                    <!-- Урон оружия -->
+                    <div class="form-group row ml-2">
+                        <label class="col-5" for="damageWeapon">Урон</label>
+                        <input type="text" class="form-control ml-3 col-3" id="damageWeapon" placeholder="1k12">
+                    </div>
+                    <!-- Вес оружия -->
+                    <div class="form-group row ml-2">
+                        <label class="col-5" for="weightWeapon">Вес</label>
+                        <input type="text" class="form-control ml-3 col-3" id="weightWeapon" placeholder="Вес">
+                    </div>
+
+                </form>
             </div>
+            <!-- Броня -->
             <div class="tab-pane fade" id="armor" role="tabpanel" aria-labelledby="armor-tab">
                 <table class="table">
                     <tr>
@@ -306,7 +440,20 @@
                         <td>Удалить</td>
                     </tr>
                 </table>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="armorName">Название</label>
+                        <input class="form-control" id="armorName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="armorDescription">Описание класса</label>
+                        <textarea class="form-control" id="armorDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                </form>
             </div>
+            <!-- Предметы -->
             <div class="tab-pane fade" id="items" role="tabpanel" aria-labelledby="items-tab">
                 <table class="table">
                     <tr>
@@ -320,7 +467,20 @@
                         <td>Восстанавливает 2к4+4 единиц здоровья</td>
                     </tr>
                 </table>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="itemsName">Название</label>
+                        <input class="form-control" id="itemsName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="itemsDescription">Описание класса</label>
+                        <textarea class="form-control" id="itemsDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                </form>
             </div>
+            <!-- Скиллы -->
             <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
                 <table class="table">
                     <tr>
@@ -336,7 +496,20 @@
                         <td>Удалить</td>
                     </tr>
                 </table>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="skillsName">Название</label>
+                        <input class="form-control" id="skillsName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="skillsDescription">Описание класса</label>
+                        <textarea class="form-control" id="skillsDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                </form>
             </div>
+            <!-- Магия -->
             <div class="tab-pane fade" id="magic" role="tabpanel" aria-labelledby="magic-tab">
                 <table class="table">
                     <tr>
@@ -356,6 +529,18 @@
                         <td>Удалить</td>
                     </tr>
                 </table>
+                <form>
+                    <!-- Название -->
+                    <div class="form-group">
+                        <label for="raceName">Название</label>
+                        <input class="form-control" id="magicName" placeholder="Введите название"/>
+                    </div>
+                    <!-- Описание -->
+                    <div class="form-group">
+                        <label for="raceDescription">Описание класса</label>
+                        <textarea class="form-control" id="magicDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
