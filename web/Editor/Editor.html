@@ -47,7 +47,7 @@
 </head>
 <body>
 <div class="row" >
-    <div class="col-3 pr-0"  style="height: 100vh;">
+    <div class="col-3 pr-0 d-sm-none d-lg-block"  style="height: 100vh;">
         <div class="nav flex-column " id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <ul class="nav flex-column" >
                 <li class="nav-item">
@@ -146,6 +146,8 @@
                         <label for="classDescription">Описание класса</label>
                         <textarea class="form-control" id="classDescription" placeholder="Введите описание"></textarea>
                     </div>
+                    <h4>Список навыков</h4>
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
             <!-- Расы -->
@@ -173,14 +175,14 @@
                     </div>
                     <!-- Описание -->
                     <div class="form-group">
-                        <label for="raceDescription">Описание класса</label>
+                        <label for="raceDescription">Описание расы</label>
                         <textarea class="form-control" id="raceDescription" placeholder="Введите описание"></textarea>
                     </div>
                     <div class="row">
                         <!-- Размер -->
-                        <div class="form-group row pl-3">
-                            <label class="col-sm-5 col-form-label" for="size">Размер</label>
-                            <div class="col-sm-7">
+                        <div class="form-group row col-6">
+                            <label class="col-sm-7 col-form-label" for="size">Размер</label>
+                            <div class="col-sm-5">
                                 <select class="form-control" id="size">
                                     <option>S</option>
                                     <option>M</option>
@@ -190,9 +192,9 @@
                             </div>
                         </div>
                         <!-- Скорость -->
-                        <div class="form-group row pl-3">
-                            <label class="col-sm-5 col-form-label" for="speed">Скорость</label>
-                            <div class="col-sm-7">
+                        <div class="form-group row col-6">
+                            <label class="col-sm-7 col-form-label" for="speed">Скорость</label>
+                            <div class="col-sm-5">
                                 <select class="form-control" id="speed">
                                     <option>25</option>
                                     <option>30</option>
@@ -205,42 +207,45 @@
                     <div>
                         <h6>Бонусы к характеристикам</h6>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label" for="strength">Сила</label>
+                            <label class="col-sm-9 col-form-label" for="strength">Сила</label>
                             <div class="col-sm-3">
                                 <input value="0" class="form-control" id="strength" placeholder="Введите количество"/>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label" for="dexterity">Ловкость</label>
+                            <label class="col-sm-9 col-form-label" for="dexterity">Ловкость</label>
                             <div class="col-sm-3">
                                 <input value="0" class="form-control" id="dexterity" placeholder="Введите количество"/>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label" for="constitution">Телосложение</label>
+                            <label class="col-sm-9 col-form-label" for="constitution">Телосложение</label>
                             <div class="col-sm-3">
                                 <input value="0" class="form-control" id="constitution" placeholder="Введите количество"/>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label" for="intelligence">Интеллект</label>
+                            <label class="col-sm-9 col-form-label" for="intelligence">Интеллект</label>
                             <div class="col-sm-3">
                                 <input value="0" class="form-control" id="intelligence" placeholder="Введите количество"/>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label" for="wisdom">Мудрость</label>
+                            <label class="col-sm-9 col-form-label" for="wisdom">Мудрость</label>
                             <div class="col-sm-3">
                                 <input value="0" class="form-control" id="wisdom" placeholder="Введите количество"/>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-2 col-form-label" for="charisma">Харизма</label>
+                            <label class="col-sm-9 col-form-label" for="charisma">Харизма</label>
                             <div class="col-sm-3">
                                 <input value="0" class="form-control" id="charisma" placeholder="Введите количество"/>
                             </div>
                         </div>
                     </div>
+                    <h4>Список навыков</h4>
+                    <h4>Список владений</h4>
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
             <!-- Предыстория -->
@@ -265,9 +270,12 @@
                     </div>
                     <!-- Описание -->
                     <div class="form-group">
-                        <label for="backstageDescription">Описание класса</label>
+                        <label for="backstageDescription">Описание предыстории</label>
                         <textarea class="form-control" id="backstageDescription" placeholder="Введите описание"></textarea>
                     </div>
+                    <h4>Список навыков</h4>
+                    <h4>Список владений и инструментов</h4>
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
             <!-- Черты -->
@@ -292,10 +300,13 @@
                     </div>
                     <!-- Описание -->
                     <div class="form-group">
-                        <label for="featsDescription">Описание класса</label>
+                        <label for="featsDescription">Описание черты</label>
                         <textarea class="form-control" id="featsDescription" placeholder="Введите описание"></textarea>
                     </div>
+                    <h4>Список требований</h4>
+                    <h4>Список бонусов</h4>
                 </form>
+                <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
             </div>
             <!-- Оружие -->
             <div class="tab-pane fade" id="weapon" role="tabpanel" aria-labelledby="weapon-tab">
@@ -405,19 +416,25 @@
                     <!-- Стоимость оружия -->
                     <div class="form-group row ml-2">
                         <label class="col-5" for="costWeapon">Стоимость</label>
-                        <input type="text" class="form-control ml-3 col-3" id="costWeapon" placeholder="Стоимость">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="costWeapon" placeholder="Стоимость">
+                        </div>
                     </div>
                     <!-- Урон оружия -->
                     <div class="form-group row ml-2">
                         <label class="col-5" for="damageWeapon">Урон</label>
-                        <input type="text" class="form-control ml-3 col-3" id="damageWeapon" placeholder="1k12">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control " id="damageWeapon" placeholder="1k12">
+                        </div>
                     </div>
                     <!-- Вес оружия -->
                     <div class="form-group row ml-2">
                         <label class="col-5" for="weightWeapon">Вес</label>
-                        <input type="text" class="form-control ml-3 col-3" id="weightWeapon" placeholder="Вес">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="weightWeapon" placeholder="Вес">
+                        </div>
                     </div>
-
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
             <!-- Броня -->
@@ -451,6 +468,53 @@
                         <label for="armorDescription">Описание класса</label>
                         <textarea class="form-control" id="armorDescription" placeholder="Введите описание"></textarea>
                     </div>
+                    <!-- Тип доспеха -->
+                    <div class="form-group row">
+                        <label class="col-sm-9 " for="armorType">Тип доспеха</label>
+                        <div class="col-sm-3">
+                            <select id="armorType" class="custom-select">
+                                <option value="light" selected>Легкие</option>
+                                <option value="middle">Средние</option>
+                                <option value="heavy">Тяжелые</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Класс доспеха (КД) -->
+                    <div class="form-group row">
+                        <label class="col-sm-9 "  for="armorClass">Класс доспеха</label>
+                        <div class="col-sm-3">
+                            <input class="form-control" id="armorClass" placeholder="Класс доспеха">
+                        </div>
+                    </div>
+                    <!-- Требования к силе -->
+                    <div class="form-group row">
+                        <label class="col-sm-9 "  for="armorStrength">Необходимая сила</label>
+                        <div class="col-sm-3">
+                            <input class="form-control" id="armorStrength" placeholder="Сила">
+                        </div>
+                    </div>
+                    <!-- Штраф к скрытности -->
+                    <div class="form-group row ml-1 container">
+                        <input type="checkbox" class="custom-control-input" id="hindranceStealth">
+                        <div class="col-sm-3">
+                            <label class="custom-control-label" for="hindranceStealth">Помеха скрытности</label>
+                        </div>
+                    </div>
+                    <!-- Стоимость -->
+                    <div class="form-group row">
+                        <label class="col-sm-9 "  for="armorCost">Цена</label>
+                        <div class="col-sm-3">
+                            <input class="form-control" id="armorCost" placeholder="Цена">
+                        </div>
+                    </div>
+                    <!-- Вес -->
+                    <div class="form-group row">
+                        <label class="col-sm-9" for="armorWeight">Вес</label>
+                        <div class="col-sm-3">
+                            <input class="form-control" id="armorWeight" placeholder="Вес">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
             <!-- Предметы -->
@@ -478,6 +542,20 @@
                         <label for="itemsDescription">Описание класса</label>
                         <textarea class="form-control" id="itemsDescription" placeholder="Введите описание"></textarea>
                     </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9 "  for="itemsCost">Цена</label>
+                        <div class="col-sm-3">
+                            <input class="form-control" id="itemsCost" placeholder="Цена">
+                        </div>
+                    </div>
+                    <!-- Вес -->
+                    <div class="form-group row">
+                        <label class="col-sm-9 "  for="itemsWeight">Вес</label>
+                        <div class="col-sm-3">
+                            <input class="form-control" id="itemsWeight" placeholder="Вес">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
             <!-- Скиллы -->
@@ -504,9 +582,10 @@
                     </div>
                     <!-- Описание -->
                     <div class="form-group">
-                        <label for="skillsDescription">Описание класса</label>
+                        <label for="skillsDescription">Описание навыка</label>
                         <textarea class="form-control" id="skillsDescription" placeholder="Введите описание"></textarea>
                     </div>
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
             <!-- Магия -->
@@ -532,14 +611,67 @@
                 <form>
                     <!-- Название -->
                     <div class="form-group">
-                        <label for="raceName">Название</label>
+                        <label for="magicName">Название</label>
                         <input class="form-control" id="magicName" placeholder="Введите название"/>
                     </div>
                     <!-- Описание -->
                     <div class="form-group">
-                        <label for="raceDescription">Описание класса</label>
+                        <label for="magicDescription">Описание заклинания</label>
                         <textarea class="form-control" id="magicDescription" placeholder="Введите описание"></textarea>
                     </div>
+                    <div class="form-group">
+                        <label for="magicHLDescription">На больших уровнях</label>
+                        <textarea class="form-control" id="magicHLDescription" placeholder="Введите описание"></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9  col-form-label" for="magicLevel">Уровень</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicLevel" placeholder="Уровень"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9  col-form-label" for="magicSchool">Школа</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicSchool" placeholder="Школа"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9  col-form-label" for="magicCastingTime">Время накладывания</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicCastingTime" placeholder="Время накладывания"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9 col-form-label" for="magicTarget">Цель</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicTarget" placeholder="Время накладывания"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9 col-form-label" for="magicDistance">Дистанция в футах</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicDistance" placeholder="Дистанция"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9  col-form-label" for="magicComponent">Компоненты</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicComponent" placeholder="Время накладывания"/>
+                        </div>
+                    </div>
+                    <div class="form-group  row">
+                        <label class="col-sm-9 col-form-label" for="magicDuration">Длительность</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicDuration" placeholder="Длительность"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-9  col-form-label" for="magicRitual">Ритуал</label>
+                        <div class="col-sm-3">
+                            <input value="0" class="form-control" id="magicRitual" placeholder="Время накладывания"/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-secondary">Добавить</button>
                 </form>
             </div>
         </div>
