@@ -1,4 +1,4 @@
-package main.java.mastersTools.character.magic;
+package mastersTools.character.magic;
 
 public class Magic {
 

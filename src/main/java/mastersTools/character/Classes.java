@@ -1,4 +1,4 @@
-package main.java.mastersTools.character;
+package mastersTools.character;
 
 import java.util.List;
 

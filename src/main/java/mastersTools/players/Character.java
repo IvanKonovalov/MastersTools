@@ -1,9 +1,8 @@
-package main.java.mastersTools.players;
+package mastersTools.players;
 
-import main.java.mastersTools.character.*;
-import main.java.mastersTools.items.Armor;
-import main.java.mastersTools.items.Shield;
-import main.java.mastersTools.items.Weapon;
+import mastersTools.character.*;
+import mastersTools.items.*;
+
 
 import java.util.List;
 
@@ -41,5 +40,5 @@ public class Character {
     private int electromadMoney;
     private int goldMoney;
     private int platinumMoney;
-    private List inventory;
+    private List<Item> inventory;
 }

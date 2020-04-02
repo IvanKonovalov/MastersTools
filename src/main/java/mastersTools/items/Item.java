@@ -1,5 +1,12 @@
-package main.java.mastersTools.items;
+package mastersTools.items;
 
-interface Item {
-
+public interface Item {
+    String getName();
+    void setName(String name);
+    String getDescription();
+    void setDescription(String description);
+    int getPrice();
+    void setPrice(int price);
+    double getWeight();
+    void setWeight(double weight);
 }
